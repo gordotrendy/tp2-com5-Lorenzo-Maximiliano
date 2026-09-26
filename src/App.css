@@ -1,0 +1,104 @@
+header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 30px;
+    flex-direction: row-reverse;
+    background-color:var(--color-principal);
+    color:  white;
+}
+
+header img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 45%;
+}
+
+
+:root {
+    --color-principal: #0e1216;
+    --color-secundario: #223946;
+    --color-acento: #c7a989;
+    --color-fondo: #18252b;
+    --color-texto: #f1eee8;
+}
+
+button {
+    background-color: var(--color-acento);
+
+}
+
+body{
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+}
+
+h1,h2,h3 {
+    color: var(--color-acento);
+}
+
+.hero {
+    text-align: center;
+    padding: 60px 20px;
+
+}
+
+.about {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: var(--color-secundario);
+}
+
+.about p {
+    max-width: 800px;
+    margin: 15px auto;
+}
+
+
+.skills {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.skills-list {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    list-style: none;
+    padding: 0;
+}
+
+.skills-list li {
+    background-color: var(--color-secundario);
+    padding: 12px 20px;
+    border-radius: 10px;
+    color: var(--color-texto);
+}
+
+.projects {
+    padding: 40px 20px;
+}
+
+.project-card {
+    background-color: var(--color-secundario);
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    list-style: none;
+    width: 300px;
+}
+
+.projects-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 0;
+    list-style: none;
+    flex-wrap: wrap-reverse;
+}
+
+.imagenproject{
+    width: 300px;
+
+}
