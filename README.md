@@ -1,10 +1,59 @@
-
-# TP1: Mi Portafolio en React
+# TP2: Mi Portafolio Multipágina con React Router DOM
 
 **Estudiante:** Maximiliano Lorenzo
 **Comisión:** 5
-**Materia:** Programación  IV
+**Materia:** Programación IV
 **Institución:** Universidad Tecnológica Nacional – Facultad Regional Tucumán
+
+---
+
+## Descripción del Proyecto
+
+Este proyecto es la continuación del TP1: un portafolio personal transformado en una aplicación **multipágina** utilizando **React**, **Vite** y **React Router DOM**. La interfaz se divide en un menú lateral (aprox. 30 % del ancho) y un área de contenido (aprox. 70 %) que cambia según la ruta seleccionada, sin recargar la página.
+
+El objetivo del trabajo es aplicar los conceptos de componentes, JSX, `props`, listas dinámicas con `.map()` y `key`, estado con `useState` y eventos, incorporando la navegación entre páginas con rutas.
+
+### Páginas y rutas
+
+| Página     | Ruta          |
+| ----------- | ------------- |
+| Home        | `/`         |
+| Sobre mí   | `/about`    |
+| Habilidades | `/skills`   |
+| Proyectos   | `/projects` |
+| Contacto    | `/contact`  |
+
+### Estructura del proyecto
+
+```
+src/
+├── components/
+│   ├── Header.jsx
+│   ├── Sidebar.jsx
+│   ├── Footer.jsx
+│   ├── SkillCard.jsx
+│   └── ProjectCard.jsx
+├── pages/
+│   ├── Home.jsx
+│   ├── About.jsx
+│   ├── Skills.jsx
+│   ├── Projects.jsx
+│   └── Contact.jsx
+├── App.jsx
+├── App.css
+├── main.jsx
+└── index.css
+```
+
+---
+
+## Tecnologías Utilizadas
+
+- **React**
+- **Vite**
+- **React Router DOM** (`BrowserRouter`, `Routes`, `Route`, `NavLink`, `Link`)
+- **JavaScript (ES6+)** con JSX
+- **CSS / HTML5**TP1: Mi Portafolio en React
 
 ---
 
@@ -35,7 +84,6 @@ Para ejecutar este proyecto en tu máquina local, sigue estos pasos:
 
 	cd tp1-react-portafolio-Lorenzo-Maximiliano
 
-
 3.Instalar las dependencias:
     npm install
 
@@ -43,4 +91,3 @@ Para ejecutar este proyecto en tu máquina local, sigue estos pasos:
     npm run dev
 
 5.Abri el navegador con el link que te da en la terminal
-
