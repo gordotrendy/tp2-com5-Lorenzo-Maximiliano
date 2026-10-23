@@ -1,3 +1,6 @@
+import SkillCard from "../components/SkillCard"
+
+
 function Skills() {
     const habilidades = [
         'C#',
