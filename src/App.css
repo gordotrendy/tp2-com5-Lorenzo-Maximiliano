@@ -1,18 +1,18 @@
 header {
     display: flex;
     align-items: center;
-    gap: 20px;
-    padding: 30px;
-    flex-direction: row-reverse;
-    background-color:var(--color-principal);
-    color:  white;
+    gap: 8px;
+    padding: 10px 0;
+    flex-direction: column;
+    text-align: center;
+    color: white;
 }
 
 header img {
-    width: 200px;
-    height: 200px;
+    width: 140px;
+    height: 140px;
     object-fit: cover;
-    border-radius: 45%;
+    border-radius: 35%;
 }
 
 
@@ -95,10 +95,117 @@ h1,h2,h3 {
     gap: 20px;
     padding: 0;
     list-style: none;
-    flex-wrap: wrap-reverse;
+    flex-wrap: wrap;
 }
 
 .imagenproject{
     width: 300px;
 
+}
+
+
+/*  añadido para el 30/70 */
+#root {
+    width: 100%;
+    max-width: none;
+    margin: 0;
+    border-inline: none;
+    display: block;
+    text-align: left;
+    min-height: 100vh;
+}
+
+.layout {
+    display: flex;
+    min-height: 100vh;
+}
+
+.sidebar {
+    width: 30%;
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    overflow-y: auto;
+    box-sizing: border-box;
+    padding: 16px 20px;
+    background-color: var(--color-principal);
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar h1 {
+    font-size: 26px;
+    margin: 0;
+}
+
+.sidebar nav {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    margin-top: 6px;
+}
+
+.sidebar nav a {
+    color: var(--color-texto);
+    text-decoration: none;
+    padding: 8px 14px;
+    border-radius: 8px;
+}
+
+.sidebar nav a:hover {
+    background-color: var(--color-secundario);
+}
+
+.sidebar nav a.active {
+    background-color: var(--color-acento);
+    color: var(--color-principal);
+    font-weight: bold;
+}
+
+.sidebar footer {
+    margin-top: auto;
+    font-size: 13px;
+    text-align: center;
+}
+
+.sidebar::-webkit-scrollbar{
+    display: none;
+}
+
+.contenido {
+    width: 70%;
+    text-align: center;
+}
+
+.boton-link {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: var(--color-acento);
+    color: var(--color-principal);
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+.skills-list li {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.contact {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.contact-list {
+    list-style: none;
+    padding: 0;
+}
+
+@media (max-width: 768px) {
+    .layout { flex-direction: column; }
+    .sidebar { width: 100%; height: auto; position: static; }
+    .sidebar nav { flex-direction: row; flex-wrap: wrap; justify-content: center; }
+    .contenido { width: 100%; }
 }
