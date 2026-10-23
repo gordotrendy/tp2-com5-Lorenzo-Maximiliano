@@ -78,11 +78,11 @@ Para ejecutar este proyecto en tu máquina local, sigue estos pasos:
 
 1.Clonar el repositorio:
 
-	git clone https://github.com/gordotrendy/tp1-react-portafolio-Lorenzo-Maximiliano.git
+	git clone https://github.com/gordotrendy/tp2-com5-Lorenzo-Maximiliano.git
 
 2.Ingresar a la carpeta del proyecto:
 
-	cd tp1-react-portafolio-Lorenzo-Maximiliano
+	cd tp2-react-portafolio-Lorenzo-Maximiliano
 
 3.Instalar las dependencias:
     npm install
