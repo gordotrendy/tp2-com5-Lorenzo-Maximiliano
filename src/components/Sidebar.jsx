@@ -15,9 +15,13 @@ const Sidebar = () => {
       <nav>
         
         <NavLink to="/" end>Home</NavLink>
+       
         <NavLink to="/About">Sobre Mi</NavLink>
+       
         <NavLink to="/Skills">Habilidades</NavLink>
+        
         <NavLink to="/Projects">Proyectos</NavLink>
+        
         <NavLink to="/Contact">Contacto</NavLink>
 
       </nav>
