@@ -1,3 +1,5 @@
+import ProjectCard from "../components/ProjectCard"
+
 function Projects(){
 
     const proyectos= [
@@ -37,26 +39,9 @@ function Projects(){
             </h2>
 
             <ul className="projects-list">
-                {proyectos.map((proyecto) =>
-                (<li className="project-card" key={proyecto.nombre}>
-                    <a 
-                    href={proyecto.url}
-                    target="_blank"
-                    rel="noopener noreferrer">
-
-                        <img className="imagenproject"
-                        src={proyecto.imagen}
-                        alt={`Imagen de ${proyecto.nombre}`}
-                        />
-
-
-                    <h3>{proyecto.nombre}</h3>
-                    <p>{proyecto.descripcion}</p>
-                    <p>Tecnologia: {proyecto.tecnologia}</p>
-                    <p>Estado: {proyecto.estado}</p>
-
-                    </a>
-                </li>))}
+                {proyectos.map((proyecto) => (
+                    <ProjectCard key={proyecto.nombre} {...proyecto} />
+                ))}
             </ul>
         </section>
     )   

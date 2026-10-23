@@ -1,8 +1,11 @@
 import React from 'react'
 
-const SkillCard = () => {
+function SkillCard ({nombre,nivel}) {
   return (
-    <div>SkillCard</div>
+    <li>
+        <strong>{nombre}</strong>
+        <span>{nivel}</span>
+    </li>
   )
 }
 

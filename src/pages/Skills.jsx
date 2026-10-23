@@ -2,13 +2,14 @@ import SkillCard from "../components/SkillCard"
 
 
 function Skills() {
-    const habilidades = [
-        'C#',
-        'JavaScript',
-        'React',
-        'HTML5',
-        'CSS',
-        'Git',
+    const habilidades = 
+    [
+        { nombre: 'C#', nivel: 'Intermedio' },
+        { nombre: 'JavaScript', nivel: 'Intermedio' },
+        { nombre: 'React', nivel: 'Intermedio' },
+        { nombre: 'HTML5', nivel: 'Intermedio' },
+        { nombre: 'CSS', nivel: 'Basico' },
+        { nombre: 'Git', nivel: 'Basico' },
 
     ]
     //aca recorro el array con .map uno por uno atraves de una variable auxiliar
@@ -19,11 +20,9 @@ function Skills() {
 
             <ul className="skills-list">
                 
-                {habilidades.map((habilidad)=>  
-                    (<li key={habilidad}>
-                    {habilidad}
-                    </li>)
-                )}
+                {habilidades.map((habilidad)=>  (
+                    <SkillCard key={habilidad.nombre} nombre={habilidad.nombre} nivel={habilidad.nivel}/>
+                    ))}
             </ul>
         </section>
     )
